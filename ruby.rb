@@ -17,3 +17,5 @@
   h.delete_if do |k, v|
     v < 3.5
   end
+
+[1,2,3,4,5,6,7,8,9].delete_if{ |i| i % 2}
