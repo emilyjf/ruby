@@ -19,3 +19,11 @@
   end
 
 [[1,2,3,4,5,6,7,8,9].delete_if{ |n| n % 2 == 0}
+
+def array_copy(source)
+  destination = []
+  source.each do |number|
+    destination << number if number < 4
+  end
+  return destination
+end
