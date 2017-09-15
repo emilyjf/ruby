@@ -90,3 +90,91 @@
 # contacts["Sally Johnson"][:phone] = contact_data[1][2]
 
 # puts contacts
+# contacts = {"Joe Smith"=>{:email=>"joe@email.com", :address=>"123 Main st.", :phone=>"555-123-4567"}, "Sally Johnson"=>{:email=>"sally@email.com", :address=>"404 Not Found Dr.", :phone=>"123-234-3454"}}
+
+# # Using the hash you created from the previous exercise, demonstrate how you would access Joe's email and Sally's phone number?
+# puts contacts["Joe Smith"][:email]
+# puts contacts["Sally Johnson"][:phone]
+
+# Now, programmatically loop or iterate over the contacts hash from exercise 12, and populate the associated data from the contact_data array. Hint: you will probably need to iterate over ([:email, :address, :phone]), and some helpful methods might be the Array shift and first methods.
+
+# Note that this exercise is only concerned with dealing with 1 entry in the contacts hash, like this:  contact_data = ["joe@email.com", "123 Main st.", "555-123-4567"]
+# contacts = {"Joe Smith" => {}}
+
+
+# contacts = {"Joe Smith" => {}}
+
+# contact_data = ["joe@email.com", "123 Main st.", "555-123-4567"]
+            
+# fields = [:email, :address, :phone]
+
+
+# contacts.each do |name, hash|
+#   fields.each do |field|
+#     hash[field] = contact_data.shift
+#   end
+# end
+
+# puts contacts
+
+# As a bonus, see if you can figure out how to make it work with multiple entries in the contacts hash.
+
+# contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
+#             ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
+
+# contacts = {"Joe Smith"=>{:email=>"joe@email.com", :address=>"123 Main st.", :phone=>"555-123-4567"}, "Sally Johnson"=>{:email=>"sally@email.com", :address=>"404 Not Found Dr.", :phone=>"123-234-3454"}}
+
+# fields = [:email, :address, :phone]
+
+# contacts.each_with_index do |(name, hash), idx|
+#   fields.each do |field|
+#     hash[field] = contact_data[idx].shift
+#   end
+# end
+
+# puts contacts
+
+# Use Ruby's Array method delete_if and String method start_with? to delete all of the words that begin with an "s" in the following array.
+
+# arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+
+# arr.delete_if { |word| word.start_with?("s") }
+
+# puts arr
+
+# Then recreate the arr and get rid of all of the words that start with "s" or starts with "w".
+
+# arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+
+# arr.delete_if { |word| word.start_with?("s", "w")}
+
+# puts arr
+
+# Take the following array:
+# a = ['white snow', 'winter wonderland', 'melting ice',
+#      'slippery sidewalk', 'salted roads', 'white trees']
+
+# # and turn it into a new array that consists of strings containing one word. (ex. ["white snow", etc...] → ["white", "snow", etc...]. Look into using Array's map and flatten methods, as well as String's split method.
+# a.flatten
+
+# a.
+  
+
+# end
+
+# puts a
+
+name = "twittr"
+
+def fix_spelling(name)
+  if(name == 'twittr')
+    name = 'twitter'
+  else
+    fix_spelling(name)
+  end
+end
+
+return name
+
+
+
