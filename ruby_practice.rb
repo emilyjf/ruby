@@ -154,27 +154,23 @@
 # a = ['white snow', 'winter wonderland', 'melting ice',
 #      'slippery sidewalk', 'salted roads', 'white trees']
 
-# # and turn it into a new array that consists of strings containing one word. (ex. ["white snow", etc...] → ["white", "snow", etc...]. Look into using Array's map and flatten methods, as well as String's split method.
-# a.flatten
+# # # and turn it into a new array that consists of strings containing one word. (ex. ["white snow", etc...] → ["white", "snow", etc...]. Look into using Array's map and flatten methods, as well as String's split method.
+# # a.flatten
+# # new = []
 
-# a.
-  
+# # a.each do |string|
+# #   new << string.split
+# # end
 
-# end
+# # puts new
 
-# puts a
+# a = a.map { |pairs| pairs.split }
+# a = a.flatten
+# print a
 
-name = "twittr"
 
-def fix_spelling(name)
-  if(name == 'twittr')
-    name = 'twitter'
-  else
-    fix_spelling(name)
-  end
-end
 
-return name
+
 
 
 
