@@ -168,9 +168,29 @@
 # a = a.flatten
 # print a
 
+# Return a method that evaluates whether a word is an anagram.
+# { 'acrs' => ['cars', 'racs', 'scar']}
+# a = ['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream']
+
+# b = a.group_by { |element| element.downcase.chars.sort }.values
+
+# print b
+
+# Implement FizzBuzz. Write a program that prints the integers from 1 to 100. But for multiples of three print “Fizz” instead of the number, and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
 
+  (1..100).each do |num|
+    if num % 3 == 0 && num % 5 == 0
+      puts "FizzBuzz"
+    elsif num % 5 == 0
+      puts "Buzz"
+    elsif num % 3 == 0 
+      puts "Fizz"
+    else
+      puts num
+    end
+  end
 
-
-
+  
+  
 
