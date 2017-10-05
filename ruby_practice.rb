@@ -191,12 +191,17 @@
   #   end
   # end
 
-N = gets.strip.to_i
+# N = gets.strip.to_i
 
-if N % 2 == 1 
-    print "Weird"
-elsif N % 2 == 0 && (N > 1 && N < 6) || (N > 20)
-    print "Not Weird"
-else N % 2 == 0 && N == 6..20
-    print "Weird"
-end
+# if N % 2 == 1 
+#     print "Weird"
+# elsif N % 2 == 0 && (N > 1 && N < 6) || (N > 20)
+#     print "Not Weird"
+# else N % 2 == 0 && N == 6..20
+#     print "Weird"
+# end
+
+# Smash Words
+words = [].join(' ')
+
+puts words
