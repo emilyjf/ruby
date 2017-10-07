@@ -201,7 +201,3 @@
 #     print "Weird"
 # end
 
-# Smash Words
-words = [].join(' ')
-
-puts words
